@@ -24,7 +24,7 @@ export default function Hero() {
   speed={50} // velocidad de tipeo (más natural que 12ms)
   deletionSpeed={70} // velocidad de borrado
   wrapper="p"
-  className="mt-6 text-lg font-bold md:text-xl text-[#A0A0A0] max-w-2xl mx-auto"
+  className="mt-6 text-lg font-bold md:text-xxl text-[#A0A0A0] max-w-2xl mx-auto"
   cursor={true}
   repeat={Infinity}
 />
