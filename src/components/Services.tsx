@@ -47,8 +47,11 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="bg-[#0E0E10] text-[#F3F3F3] py-16">
-      <h2 className="text-4xl font-bold text-center mb-12">Planes y Precios</h2>
+    <section className="bg-[#0E0E10] text-[#F3F3F3] py-4">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+  Planes y Precios
+</h2>
+
 
       {/* Slider horizontal */}
       <div className="max-w-6xl mx-auto overflow-x-auto scrollbar-hide">
