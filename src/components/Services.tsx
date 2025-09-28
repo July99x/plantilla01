@@ -6,7 +6,7 @@ export default function Pricing() {
   const plans = [
     {
       title: "Landing Page",
-      price: "$100",
+      price: "$150 USD",
       features: [
         { text: "1 página", included: true },
         { text: "Diseño moderno", included: true },
@@ -16,32 +16,56 @@ export default function Pricing() {
     },
     {
       title: "Ecommerce",
-      price: "$500",
+      price: "$350 USD",
       features: [
         { text: "Catálogo de productos", included: true },
-        { text: "Carrito y pagos", included: true },
+        { text: "Carrito de compras", included: true },
+        {
+          text: "Integración con Pagos online (Mercado Pago o Stripe)",
+          included: true,
+        },
         { text: "SEO inicial", included: true },
-        { text: "Soporte 24/7", included: false },
+        {
+          text: "Soporte básico vía mail/WhatsApp en horario laboral",
+          included: true,
+        },
+        { text: "Panel de Admin", included: true },
+        { text: "Registro de Dominio Gratis el primer año", included: true },
+      ],
+    },
+    {
+      title: "Growth",
+      price: "$500 USD",
+      features: [
+        { text: "Todo lo que incluye Ecommerce", included: true },
+        { text: "Integración con APIs estándar (Google Maps, WhatsApp, etc.)", included: true },
+        { text: "Integración con analytics avanzados (GA4, Hotjar, Meta Pixel)", included: true },
+        { text: "Optimización de velocidad (Core Web Vitals)", included: true },
+        { text: "Soporte extendido", included: true },
       ],
     },
     {
       title: "Premium",
-      price: "$800",
+      price: "$800 USD",
       features: [
-        { text: "Todo lo de Ecommerce", included: true },
-        { text: "Integraciones avanzadas", included: true },
+        { text: "Todo lo que incluye Growth", included: true },
+        { text: "Configuración de automatizaciones simples (ej: lead → CRM → correo)", included: true },
         { text: "Soporte prioritario", included: true },
         { text: "Consultoría mensual", included: true },
       ],
     },
     {
       title: "Enterprise",
-      price: "$1500",
+      price: "A tu medida",
       features: [
-        { text: "Todo lo de Premium", included: true },
+        { text: "Todo lo que incluye Premium", included: true },
         { text: "Soporte dedicado", included: true },
-        { text: "Integración a medida", included: true },
+        { text: "Integración con APIs avanzadas", included: true },
         { text: "Capacitación al equipo", included: true },
+        { text: "Implementación de Automatizaciones con IA", included: true },
+        { text: "Marketplace multi-vendedor", included: true },
+        { text: "Integraciones con ERPs / sistemas contables", included: true },
+        { text: "Automatizaciones con IA (chatbots, análisis de datos, emails automáticos)", included: true },
       ],
     },
   ];
@@ -49,9 +73,8 @@ export default function Pricing() {
   return (
     <section className="bg-[#0E0E10] text-[#F3F3F3] py-4">
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-  Planes y Precios
-</h2>
-
+        Planes y Precios
+      </h2>
 
       {/* Slider horizontal */}
       <div className="max-w-6xl mx-auto overflow-x-auto scrollbar-hide">
